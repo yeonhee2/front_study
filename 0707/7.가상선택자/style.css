@@ -1,0 +1,55 @@
+div > p:first-child { /* 이 방법은 첫번째랑 마지막만 선택할 수 있음 */
+  color: red;
+}
+
+div > p:last-child {
+  color: blue;
+}
+/* h3:nth-of-type은 다른 태그가 중간에 있어도 제외된 순번으로 처리 */
+div > h3:nth-of-type(4) { 
+  color: red;
+}
+/* 번호도 넣을 수 있고 odd(홀수)를 넣어도 됨*/
+/* even은 짝수 */
+/* h3:nth-child는 다른 태그가 중간에 있으면 그걸 포함한 순번으로 처리 */
+div > h3:nth-child(4) { 
+  color: blue;
+}
+
+#outer > h4:nth-child(5) {
+  color: red;
+}
+
+/* 기본 상태 - 페이지를 방문하지 않았을때 */
+a:link {
+  color: aqua;
+}
+/* 해당 페이지를 방문하면 적용 */
+a:visited {
+  color: red;
+}
+/* 마우스커서 올려두면 */
+a:hover {
+  color: blueviolet;
+}
+/* 마우스로 클릭했을때 */
+a:active {
+  color: burlywood;
+}
+/* 포커스를 가졌을때 */
+a:focus {
+  color: cornflowerblue;
+}
+
+input:focus {
+  background: skyblue;
+}
+
+input::placeholder {
+  color: red;
+}
+
+p::selection {
+  color: rgb(255, 227, 227);
+  background: gray;
+}

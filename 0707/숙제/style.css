@@ -1,0 +1,12 @@
+input:focus {
+  background: lightgray;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  background: red;
+  color: white;
+}

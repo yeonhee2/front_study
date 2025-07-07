@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  font-size: 0; /* 폰트 사이즈를 0으로 틈새를 조정, 단 li에 있는 글씨가 없어짐 */
+}
+
+li {
+  font-size: 16px; /* 없어진 글씨를 다시 보익게 하기 */ 
+  width: 100px;
+  height: 200px;
+  border: 1px solid red;
+  display: inline-block; /* 인라인 속성을 따라가기 때문에 틈새가 생김 */
+}
+
+.visi {
+  /* 숨김처리는 해주지만 해당 영역은 남아 있음 */
+  /* visibility: hidden;  */
+
+  /* 숨김처리도 해주고 영역도 사라짐 */
+  display: none;
+}
+
