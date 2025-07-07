@@ -1,12 +1,80 @@
 input:focus {
-  background: lightgray;
+  background: #f3f2f2fd;
 }
 
 a {
   text-decoration: none;
+  margin: 4px;
 }
 
 a:hover{
   background: red;
   color: white;
 }
+
+button{
+  background: white;
+}
+
+button:hover {
+  background: #C8FAC8;
+}
+
+.container{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+  background: lightgreen;
+  float: left;
+}
+
+.box1:hover{
+  box-shadow: 5px 5px 5px gray;
+  transform: scale(1.4);
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+  background: lightcoral;
+  float: left;
+}
+
+.box2:hover{
+  box-shadow: 5px 5px 5px gray;
+  transform: scale(1.4);
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+  background: lightskyblue;
+  float: left;
+}
+
+.box3:hover{
+  box-shadow: 5px 5px 5px gray;
+  transform: scale(1.4);
+}
+
+.box4 {
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+  background: lightslategray;
+  float: left;
+}
+
+.box4:hover{
+  box-shadow: 5px 5px 5px gray;
+  transform: scale(1.4);
+}
+
