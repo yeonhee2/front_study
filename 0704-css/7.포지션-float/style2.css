@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+.menu{
+  background-color: darkgoldenrod;
+  width: 500px;
+  height: 100px;
+}
+
+.nav{
+ background-color: aquamarine;
+ width: 100px;
+ height: 300px;
+ float: left;
+}
+
+.content {
+  background-color: lightsalmon;
+  width: 400px;
+  height: 300px;
+  float: left;
+}
+
+.footer {
+  background-color: darkgreen;
+  width: 500px;
+  height: 100px;
+  clear: both;
+}

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@font-face {
+    font-family: 'OG_Renaissance_Secret-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/OG_Renaissance_Secret-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  font-family: "Bitcount Grid Double","OG_Renaissance_Secret-Rg", system-ui;
+}

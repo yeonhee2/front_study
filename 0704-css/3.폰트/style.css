@@ -1,0 +1,55 @@
+/*글꼴 크기는 기본단위로는 px, 사이즈는 16*/
+p {
+  font-size: 16px;
+  /* 글꼴 두께 */
+  /*
+  100 : lighter
+  400 : nomal(기본값)
+  700 : bold
+  900 : bolder 
+  */
+  font-weight: 400;
+}
+ /* 16px = 1em(상대적) = 100% (상대적) */
+body {
+  /*줄간격*/
+  line-height: 32px;
+  /* 글꼴을 순서대로 파악하면서 읽히는것으로 지정됨 */
+  /*띄워쓰기 되는 글꼴은 ''로 해야함*/
+  font-family:'Courier New', Courier, monospace;
+
+  /* 글꼴 스타일 */
+  font-style: italic;
+
+  /* 소문자를 대문자로 바꿔줌*/
+  font-variant: small-caps;
+
+  /*font: font-style font-variant font-weight font-size/line-height font-family;*/
+}
+
+p{
+  font: italic bold 25px '굴림', Gulim;
+  font: bold italic small-caps 12px/1.2 '돋움', '굴림', Gulim;
+}
+
+h5 {
+  /* 글꼴색*/
+  color: red;
+  color: #ff0000; /* 컬러명보단 16진수를 많이 쓴다*/
+  color: rgb(255,0,0);
+  /*텍스트 효과 */
+  text-decoration:underline;
+  /* 대소문자 설정 */
+  text-transform: uppercase;
+  /* 그림자 */
+  /* 가로 세로 그림자퍼짐 그림자색*/
+  text-shadow: 1px 2px 1px gray,
+                2px 4px 3px green;
+
+  /* 자간 */
+  letter-spacing: 5px;
+  /* 단어 간격 */
+  word-spacing: 20px;
+  text-align: center;
+
+}

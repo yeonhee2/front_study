@@ -1,0 +1,37 @@
+.float {
+ /* 하나만 설정 되는게 아니라 뒤에 것도 유지됨*/
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  background-color: aquamarine;
+}
+
+.box2 {
+  background-color: beige;
+}
+
+.box3 {
+  background-color: darkseagreen;
+  float: right;
+}
+
+.box4 {
+  background-color: lightcoral;
+  margin: auto; /* 해당 태그가 넓이 설정 된 블럭요소 일 경우 가운데 정렬 (부모 요소 기준으로) 하는 법 */
+}
+
+.container {
+  height: 200px;
+  border: 1px solid red;
+  overflow: scroll; /* 부모가 자식영역 보다 작을 경우 사용 */
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 내부 스타일시트-->
+  <style>
+    h2 {
+      background-color: aqua;
+      font-size: 15px;
+    }
+  </style>
+  <!-- 내/외부 순서는 상관 없고 읽어 오는 순서대로 적용 됨-->
+  <!-- <link type="text/css" href="./style.css" rel="stylesheet"> -->
+   <link rel="stylesheet" href="./style.css"> <!--외부/ 별도의 파일로 만들어서 한다.-->
+</head>
+<body>
+  <!-- 인라인 스타일시트/ 별도의 파일에서 작업을 해도 인라인에 적용하는게 최우선이 됨 -->
+  <h1 style="text-align: center; color: red;">h1태그</h1> <!-- 가운데 정렬 -->
+  <h2>h2태그</h2>
+  <h3>h3태그</h3>
+  <h1>aaaaa</h1>
+  <h2>bbbbbb</h2>
+</body>
+</html>

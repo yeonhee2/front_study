@@ -1,0 +1,48 @@
+* {
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+}
+.profile {
+  border-radius: 70%;
+  width: 120px;
+  height: 120px;
+  position: relative; top: 300px;
+  background-image: url(./images/jhs.jpg);
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position: center center;
+  margin: auto;
+}
+
+.profile > p {
+  position: relative; top: 120px;
+  text-align: center;
+}
+
+hr {
+  position: relative; top: 360px;
+  margin: auto;
+}
+
+.nav > li ,.navt > li {
+  list-style-type: none;
+  float: left;
+  width: 25%;
+  position: relative; top: 400px;
+  text-align: center;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+

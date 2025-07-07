@@ -1,0 +1,24 @@
+body {
+  background-image: url("../../images/kakaofriends.gif");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  /* top bottom center left right center */
+  background-position: center center;
+  height: 3000px;
+  background-attachment: fixed;
+  /* background: skyblue url("../../images/kakaofriends.gif") no-repeat center center fixed; */
+  background: linear-gradient(to right bottom, blue,pink);
+  background: radial-gradient(circle, skyblue,yellowgreen);
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
+
+h1 {
+  background-color: pink;
+}
+p {
+  background-color: rgb(255, 100, 25);
+}
+/* 선택자에서 id<-class<-태그 순으로 적용 */
+.bg {
+  background-color: rgba(100, 255, 50, 0.5);
+}

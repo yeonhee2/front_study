@@ -1,0 +1,13 @@
+/* 하위 선택자 */
+#first p {
+  color: red;
+}
+/* >로 자식을 지정 하면 바로 밑에 자식한테만 적용됨*/
+#second > p {
+  background-color: aquamarine;
+}
+/*클래스명중에서 내가 하고싶은 것만적고 띄어쓰기 하지말고 바로 .클래스명을 붙이면 됨*/
+/*스페이스를 하면 자식을 의미*/
+p.inner {
+  color: blue;
+}

@@ -1,0 +1,19 @@
+.nav > li {
+  list-style-type: none;
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.nav {
+  background-color: aquamarine;
+  height: 30px;
+}
+a{
+  text-decoration: none;
+}
+
+i {
+  font-size: 16px;
+  color: red;
+}

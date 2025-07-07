@@ -1,0 +1,18 @@
+ol {
+  list-style-type: upper-roman;
+  
+}
+/* ul > li 
+  /* list-style-image: url("../../images/lion.png");  리스트 스타일로 넣으면 사이즈 조절 불가능 */
+  /* list-style-type: none;
+  background-image: url("../../images/lion.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: left center;
+  margin: 0; /* 바깥 여백 
+  padding: 0 0 0 17px; 안쪽 여백 : 위쪽 -> 오른쪽 -> 아래쪽 -> 왼쪽 순으로 */ */
+
+
+ul {
+  list-style-position: inside;
+}

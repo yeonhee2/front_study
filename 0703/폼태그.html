@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form action="https://www.google.com/search" method="get">
+    <input type="text" name="q"> 
+    <input type="submit" value="검색"> <!-- 전송해주는 버튼 생성, value는 값 지정 -->
+  </form>
+
+  <form >
+    <input type="text" size="5" maxlength="5" minlength="2" autofocus>
+    <input type="text" placeholder="아이디 입력"><br>
+    <input type="text" value="홍길동" readonly><br> <!-- readonly는 읽기 전용, 수정 안됨-->
+    <input type="text" value="홍길동" disabled> <br><!-- disabled는 비활성화 -->
+    <input type="text" required><br><!-- required는 필수속성(반드시 입력) -->
+
+    <input type="submit" value="전송">
+  </form>
+
+  <form>
+    텍스트 : <input type="text"><br>
+    비밀번호 : <input type="password"><br>
+    라디오버튼 : <input type="radio" name="yes-or-no" value="yes"> 예 <!-- name만 있을경우 어떤 것에 대한것을 보내는지 알 수 없으니 value를 써줘야함 -->
+                <input type="radio" name="yes-or-no" value="no" checked> 아니오<br>
+    체크박스 : <input type="checkbox" name="chk" value="java"> JAVA 
+              <input type="checkbox" name="chk" value="html" checked> HTML <!-- checked를 써주면 기본적으로 선택되어있음-->
+              <input type="checkbox" name="chk" value="css"> CSS<br>  
+    <input id="agree" type="checkbox"><label for="agree">약관동의</label> <!-- label을 할 경우 약관동의를 눌러도 체크 됨, 사용할 때 id, for 지정해주기-->     
+
+    <br><br>
+    <input type="submit" value="전송">
+    <input type="reset" value="리셋"> <!--같은 폼안에 있는 것들 초기화 -->
+    <input type="button" value="버튼" onclick="alert('버튼을 눌렀네')"> <!--onclick : 클릭했을때 실행해주는것-->
+    <button>버튼2</button>
+
+    <input type="file"><br> <!-- 파일 업로드 해주는 것-->
+    <textarea rows="10" cols="40">afdsff</textarea><br>
+
+    <select name="color" > <!--name은 select에만-->
+      <option value="red">빨강</option>
+      <option value="blue" selected>파랑</option> <!-- selected를 써주면 기본적으로 선택되어있음-->
+      <option value="yellow">노랑</option>
+      <option value="green">초록</option>
+    </select>
+
+    <input type="hidden"><br>
+    <input type="date"><br>
+    <input type="search">
+
+  </form>
+
+</body>
+</html>
