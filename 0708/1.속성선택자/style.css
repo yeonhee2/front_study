@@ -1,0 +1,37 @@
+[href] {
+   /*해당 태그 속성으로도 css반영 가능*/
+  color: red;
+}
+
+h1[class] {
+  /* 태그와속성은 띄어쓰기를 하면 안됨 */
+  background: pink;
+}
+
+[class="green"] {
+  background: yellowgreen;
+}
+/* ~= 공백으로 구분해서 해당 단어가 있는 속성 */
+/* [title~="태그"] {
+  color: red;
+} */
+
+/* |= 속성명이 정확하게 해당 단어, 단어 뒤 - 나오는거 */
+/* [title|="태그"] {
+  color: red;
+} */
+
+/* ^= 해당 단어로 시작하는것들 다 반영 */
+[title^="태그"] {
+  color: red;
+}
+
+/* $= 해당 단어로 끝나는 */
+[title$="태그"]{
+  color: blue;
+}
+
+/* *= 해당 단어를 포함하는 */
+[title*="태그"] {
+  font-style: italic;
+}

@@ -1,0 +1,44 @@
+.login-form input:focus{
+  background: #f3f2f2fd;
+}
+
+a {
+  text-decoration: none;
+  margin: 4px;
+}
+
+.pagenation a:hover {
+  background: skyblue;
+  color: white;
+}
+
+.container div{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  margin: 30px;
+  transition: all 0.5s ease; /* 효과를 좀 부드럽게 나타냄 */
+}
+
+.container div:nth-child(1) {
+  background: lightgreen;
+}
+
+.container div:nth-child(2) {
+  background: lightcoral;
+  
+}
+
+.container div:nth-child(3) {
+  background: lightskyblue;
+  
+}
+
+.container div:nth-child(4) {
+  background: lightslategray;
+}
+
+.container div:hover {
+  box-shadow: 2px 2px 10px gray;
+  transform: scale(1.2);
+}

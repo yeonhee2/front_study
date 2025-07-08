@@ -1,0 +1,59 @@
+
+h1::before {
+  content: "★";
+  color: red;
+}
+/* before,after : 인라인 요소로 들어감, 크기변경은 display 변경해서 해야함 */
+h1::after {
+  content: "new";
+  background: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.img {
+  width: 500px;
+  height: 500px;
+  background: url(../../images/pepe.jpg) no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.img::before {
+  content: "이미지 글씨";
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  line-height: 500px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  background: pink;
+  /* + - 할때는 꼭 앞뒤 띄어쓰기 해줘야함 */
+  width: calc(100% - 200px);
+}
+
+.aside {
+  background: yellowgreen;
+  width: 200px;
+}
+
+.container > div {
+  float: left;
+  height: 50px;
+}
+/* 인라인, 인라인 블록들 세로 가운데 하고 싶을 때 vertical-align을 사용 */
+.wrapper > b {
+  font-size: 40px;
+  vertical-align: middle;
+}
+
