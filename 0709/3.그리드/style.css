@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  /* 고정 길이 */
+  /* grid-template-columns: 200px 200px 200px; */
+  /* 가변 길이 */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* 가변길이와 고정길이 조합 */
+  /* grid-template-columns: 1fr 1fr 150px; */
+  /* grid-template-columns: repeat(3,1fr); */
+
+  /* 한칸의 너비는 200px로 할건데 한줄에 몇개 넣을지는 안정함 */
+  /* auto-fill, auto-fit 사용*/
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+
+  /* grid-template-rows: 100px 100px; */
+
+  /* grid-auto-rows: minmax(100px, 300px); */
+
+  /* gap은 행열 한번에 적용 */
+  /* gap: 10px; */
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+.container > div {
+  background: aquamarine;
+  border: 1px solid red;
+}
+
+.container > div:nth-child(1) {
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+
+  grid-column: 1/3;
+  grid-row: 1/4;
+}

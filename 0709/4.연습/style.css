@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3,300px);
+  grid-auto-rows: 320px;
+  gap: 10px;
+  padding: 20px;
+  
+}
+
+.card {
+  background: white;
+  box-shadow: 1px 1px 5px gray;
+  padding: 10px;
+}
+.card-image {
+  height: 60%;
+  background-size: cover;
+}
+
+.card > h3 {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px 0;
+}
+
+.card > p {
+  font-size: 0.8em;
+}
+
+.image1 {
+  background-image: url(../cupsimages/cup-1.jpg);
+}
+
+.image2 {
+  background-image: url(../cupsimages/cup-2.jpg);
+}
+
+.image3 {
+  background-image: url(../cupsimages/cup-3.jpg);
+}
+
+.image4 {
+  background-image: url(../cupsimages/cup-4.jpg);
+}
+
+.image5 {
+  background-image: url(../cupsimages/cup-5.jpg);
+}
+
+.image6 {
+  background-image: url(../cupsimages/cup-6.jpg);
+}
+
+.image7 {
+  background-image: url(../cupsimages/cup-7.jpg);
+}
+
+@media (max-width: 476px) {
+  .container {
+    grid-template-columns: 300px;
+  }
+}

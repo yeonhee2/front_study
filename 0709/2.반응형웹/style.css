@@ -1,0 +1,82 @@
+/* 
+  @media : 미디어 쿼리를 쓸거임
+  screen : 미디어 타입 - 화면
+  and : 조건들을 연결해주는 논리 연산자
+  max-width : 조건.. 아래코드는 최대 너비가 500px일때까지만 적용할거다
+
+*/
+
+/* @media (max-width: 500px) {
+  해당 조건에 만족 할 경우 적용 할 css코드 
+  div {
+    background: skyblue;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  background: pink;
+  height: 2000px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  background: skyblue;
+  width: 20%;
+  height: 200px;
+  margin: 5px;
+}
+
+@media (max-width: 425px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container > div {
+    width: 90%;
+    height: 150px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .container {
+    align-content: flex-start;
+  }
+
+  .container > div {
+    width: 45%;
+    height: 150px;
+  }
+}
+
+.header1 {
+  height: 100px;
+  background: yellowgreen;
+}
+
+.header2 {
+  height: 100px;
+  background: skyblue;
+}
+
+@media (max-width: 768px) {
+  .header1 {
+    display: none;
+  }
+  .header2 {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .header1 {
+    display: block;
+  }
+  .header2 {
+    display: none;
+  }
+}
