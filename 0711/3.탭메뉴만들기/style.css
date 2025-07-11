@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+}
+
+.tab-button {
+  padding: 10px;
+  color: lightgray;
+  /* 해당영역에 마우스를 갖다되면 손가락모양으로 변경하는 것 */
+  cursor: pointer;  
+}
+
+.selected {
+  font-weight: bold;
+  color: black;
+  border-bottom: 1px solid lightgray;
+}
+
+.tab-content {
+  padding: 15px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
