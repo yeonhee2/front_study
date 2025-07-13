@@ -2,6 +2,7 @@
 let cart = JSON.parse( localStorage.getItem('cart'));
 
 const cartList = document.querySelector('.list');
+
 cart.forEach( (item) => {
   
   cartList.insertAdjacentHTML('beforeend',`<div>${item}</div>`);
