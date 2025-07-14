@@ -5,6 +5,7 @@ const cartList = document.querySelector('.list');
 
 cart.forEach( (item) => {
   
-  cartList.insertAdjacentHTML('beforeend',`<div>${item}</div>`);
+  cartList.insertAdjacentHTML('beforeend',`<div>${item.name} : ${item.cnt}</div>`);
 
 })
+
