@@ -32,7 +32,8 @@ const weatherFeels = document.querySelector('.feels_like');
 const weatherTemp = document.querySelector('.temp');
 const weatherDes = document.querySelector('.description');
 const weatherImg = document.querySelector('img');
-
+const weatherSunrise = document.querySelector('.sunrise');
+const weatherSunset = document.querySelector('.sunset');
 
 
 selectBox.addEventListener('change', () => {
@@ -46,29 +47,28 @@ selectBox.addEventListener('change', () => {
   fetch(URL)
     .then( (response) => response.json())
     .then( data => {
-      console.log(data);
+      // console.log(data);
       const name = data.name;
       const feels = data.main.feels_like;
       const temp = data.main.temp;
       const des = data.weather[0].description;
       const icon = data.weather[0].icon;
-      const sunrise = new Date(data.sys.sunrise * 1000);
-      const sunset = new Date(data.sys.sunset * 1000);
-
-      console.log(sunrise);
-      console.log(sunset);
-      
-
+      const sunrise = new Date(data.sys.sunrise * 1000).toLocaleString();
+      const sunset = new Date(data.sys.sunset * 1000).toLocaleString();
+  
       weatherName.innerHTML = `도시 : ${name}`;
       weatherFeels.innerHTML = `체감 : ${feels}`;
       weatherTemp.innerHTML = `기온 : ${temp}`;
       weatherDes.innerHTML = `날씨 : ${des}`;
-      
+      weatherSunrise.innerHTML =`일출(한국 시간 기준) : ${sunrise}`;
+      weatherSunset.innerHTML = `일몰(한국 시간 기준) : ${sunset}`;
 
       const iconURL = `https://openweathermap.org/img/wn/${icon}@2x.png`
 
       weatherImg.setAttribute('src', iconURL);
 
-
+    })
+    .catch( e => {
+      alert('날씨 정보 가져오기 오류');
     })
 })

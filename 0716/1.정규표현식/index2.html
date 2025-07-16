@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+  <div id="container">
+    <h1>회원 가입</h1>
+    <form action="#">
+      <div class="input-box">
+        <input
+          type="text"
+          id="id-txt"
+          name="username"
+          placeholder="아이디입력"
+          required
+        />
+        <p id="id-check"></p>
+      </div>
+      <div class="input-box">
+        <input
+          type="password"
+          id="pw-txt"
+          name="password"
+          placeholder="비밀번호 입력"
+          required
+        />
+        <p id="pw-check"></p>
+      </div>
+      <div class="input-box">
+        <input
+          type="email"
+          id="email-txt"
+          name="email"
+          placeholder="이메일 입력"
+          required
+        />
+        <p id="email-check"></p>
+      </div>
+      <div class="input-box">
+        <input
+          type="tel"
+          id="phone-txt"
+          name="phone"
+          placeholder="전화번호 입력"
+          required
+        />
+        <p id="phone-check"></p>
+      </div>
+      <button type="submit" class="reg-req-btn" disabled>가입요청</button>
+    </form>
+  </div>
+
+  <script src="./script2.js"></script>
+  
+</body>
+</html>
